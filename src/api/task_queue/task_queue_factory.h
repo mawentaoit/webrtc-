@@ -18,6 +18,7 @@
 namespace webrtc {
 
 // The implementation of this interface must be thread-safe.
+// 这个接口是线程安全的，任务队列工厂，可以指定优先级
 class TaskQueueFactory {
  public:
   // TaskQueue priority levels. On some platforms these will map to thread
