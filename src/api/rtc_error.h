@@ -34,14 +34,17 @@ enum class RTCErrorType {
 
   // An operation is valid, but currently unsupported.
   // Maps to OperationError DOMException.
+  //操作无效
   UNSUPPORTED_OPERATION,
 
   // A supplied parameter is valid, but currently unsupported.
   // Maps to OperationError DOMException.
+  //不支持的参数
   UNSUPPORTED_PARAMETER,
 
   // General error indicating that a supplied parameter is invalid.
   // Maps to InvalidAccessError or TypeError DOMException depending on context.
+  //无效参数
   INVALID_PARAMETER,
 
   // Slightly more specific than INVALID_PARAMETER; a parameter's value was

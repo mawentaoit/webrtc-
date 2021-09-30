@@ -21,6 +21,7 @@
 
 namespace webrtc {
 
+//事件日志文件输出到文件的抽象
 class RtcEventLogOutputFile final : public RtcEventLogOutput {
  public:
   static const size_t kMaxReasonableFileSize;  // Explanation at declaration.

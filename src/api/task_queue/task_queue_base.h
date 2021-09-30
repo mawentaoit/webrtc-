@@ -76,9 +76,11 @@ class RTC_LOCKABLE RTC_EXPORT TaskQueueBase {
 
   // Users of the TaskQueue should call Delete instead of directly deleting
   // this object.
+  // 任务队列应该调用Delete来删除，而不是直接删除这个对象
   virtual ~TaskQueueBase() = default;
 };
 
+//任务队列删除器
 struct TaskQueueDeleter {
   void operator()(TaskQueueBase* task_queue) const { task_queue->Delete(); }
 };
